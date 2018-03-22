@@ -16,6 +16,7 @@ private:
     bool checkIsGameOver;
 private:
     Move userInput();
+    void userMove();
     void enemyMove();
     void bulletMove();
     void deleteTank(Coord coord);

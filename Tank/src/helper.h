@@ -7,6 +7,8 @@ namespace nConstants
     const int WIDTH            = 60;
     const int DEFAULDUSERTANKX = 25;
     const int DEFAULDUSERTANKY = 51;
+    const int TESTENEMYX = 10;
+    const int TESTENEMYY = 10;
     const int HELTH = 3;
 }
 

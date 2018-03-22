@@ -29,3 +29,8 @@ void Core::start()
 {
 
 }
+
+void Core::userMove()
+{
+
+}

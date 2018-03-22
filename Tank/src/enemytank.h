@@ -8,11 +8,11 @@ class EnemyTank
 {
 public:
     EnemyTank();
-    void draw();
     void move(Coord coord);
     Bullet fire();
 private:
     Coord mCoord;
+    Move mMove;
 };
 
 #endif // ENEMYTANK_H

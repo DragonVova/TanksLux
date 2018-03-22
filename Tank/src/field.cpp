@@ -13,11 +13,11 @@ Field::Field()
                0 == i ||
                i == nConstants::HEIGHT - 1 )
             {
-                FieldArray[i][j] = nConstants::OBSTACLES;
+                FieldArray[i][j] = nFieldobjects::OBSTACLES;
             }
             else
             {
-                FieldArray[i][j] = nConstants::CLEARFIELD;
+                FieldArray[i][j] = nFieldobjects::CLEARFIELD;
             }
         }
     }
@@ -33,16 +33,11 @@ void Field::drawField()
             {
             case nFieldobjects::OBSTACLES: std::cout << "#"; break;
             case nFieldobjects::CLEARFIELD: std::cout << " ";break;
-            case nFieldobjects::USERTANK: std::cout<< "*"; break;
+            case nFieldobjects::USERTANK: std::cout << "@"; break;
+            case nFieldobjects::ENEMYTANK: std::cout << "&"; break;
+            case nFieldobjects::DEMOLISHEDWALL: std::cout << "#"; break;
+            case nFieldobjects::GOLD: std::cout << "G"; break;
             default: break;
-            }
-            if(FieldArray[i][j] == nConstants::OBSTACLES)
-            {
-                std::cout << "#";
-            }
-            else
-            {
-                std::cout << " ";
             }
         }
         std::cout<<std::endl;
