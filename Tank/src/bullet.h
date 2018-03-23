@@ -6,7 +6,7 @@
 class Bullet
 {
 public:
-    Bullet() = delete;
+    Bullet();
     Bullet(Coord coord, Move move, bool friendlyFire);
     void move();
     Coord getCoord();

@@ -1,7 +1,8 @@
 #include "enemytank.h"
 #include "helper.h"
 
-EnemyTank::EnemyTank():mCoord(nConstants::TESTENEMYX, nConstants::TESTENEMYY)
+EnemyTank::EnemyTank():
+    mCoord(nConstants::TESTENEMYX, nConstants::TESTENEMYY)
   , mMove(Right)
 {
 

@@ -9,7 +9,9 @@ public:
     UserTank();
     int getHelth();
     void move(Coord coord);
+    void setMove(Move move);
     void damage();
+    Coord getCoord();
     Bullet fire();
 private:
     Coord mCoord;

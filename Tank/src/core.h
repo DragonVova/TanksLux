@@ -10,18 +10,18 @@ class Core
 {
 private:
     Field mField;
-    int enemyTankList[];// !
+    int enemyTankList;// !
     UserTank mUserTank;
     Bullet mBullet;
     bool checkIsGameOver;
 private:
-    Move userInput();
+    void userInput();
     void userMove();
     void enemyMove();
     void bulletMove();
-    void deleteTank(Coord coord);
+    void deleteTank(Coord& coord);
+    void deleteBullet();
 public:
-    //Core();
     void start();
 };
 
